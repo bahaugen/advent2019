@@ -1,8 +1,6 @@
 #include <iostream>
 #include <fstream>
 #include <vector>
-#include <set>
-#include <cmath>
 
 std::vector<int> get_values(std::string fpath)
 {
@@ -21,7 +19,7 @@ std::vector<int> get_values(std::string fpath)
 
 int calculate_fuel(int input)
 {
-    int value = floor(input / 3) - 2;
+    int value = (input / 3) - 2;
     //std::cout << input << " -> " << value << "\n";
     return value;
 }
