@@ -1,7 +1,7 @@
 CPP = g++
 CFLAGS = -Wall -Wextra -std=c++11 -o3
 
-EXES = day1 day2 day3
+EXES = day1 day2 day3 day4
 
 all: $(EXES)
 
@@ -13,6 +13,9 @@ day2: day2.cpp
 
 day3: day3.cpp
 	$(CPP) $(CFLAGS) -o day3 day3.cpp
+
+day4: day4.cpp
+	$(CPP) $(CFLAGS) -o day4 day4.cpp
 
 .PHONY: clean
 
